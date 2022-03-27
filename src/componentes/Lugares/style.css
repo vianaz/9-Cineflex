@@ -1,0 +1,24 @@
+.footer-sessao {
+	display: flex;
+	align-items: center;
+	width: 100vw;
+	height: 110px;
+	position: fixed;
+	bottom: 0px;
+	background-color: #c3cfd9;
+}
+.logo-filme-sessao {
+	display: flex;
+	align-items: center;
+}
+.logo-filme-sessao > img {
+	height: 85px;
+	background: #ffffff;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	padding: 5px;
+	margin: 15px;
+}
+.footer-titulo > p{
+    margin: 10px;
+}
