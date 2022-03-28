@@ -80,16 +80,20 @@ export default function Lugares() {
 				<form
 					className='formulario'
 					onSubmit={(e) => {
-						e.preventDefault();
-						axios
-							.post(
-								"https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many",
-								dadosPessoa,
-							)
-							.catch(() => alert("Houve algum problema, tente novamente!"));
-						navigate("/sucesso", {
-							state: [filme, dia, dadosPessoa, resposta],
-						});
+						if (dadosPessoa.ids.length === 0) {
+							alert("Escolha um assento ao menos");
+						} else {
+							e.preventDefault();
+							axios
+								.post(
+									"https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many",
+									dadosPessoa,
+								)
+								.catch(() => alert("Houve algum problema, tente novamente!"));
+							navigate("/sucesso", {
+								state: [filme, dia, dadosPessoa, resposta],
+							});
+						}
 					}}>
 					<div className='nome-comprador'>
 						<label htmlFor='nome'>Nome do Comprador:</label>

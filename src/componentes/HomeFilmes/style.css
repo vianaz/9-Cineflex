@@ -21,10 +21,11 @@
 .grid-filmes {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 35px 35px;
+	gap: 25px 1px;
 	justify-items: center;
 	width: 100vw;
 	margin-top: 35px;
+	padding-bottom: 50px;
 }
 .card-filme {
 	padding: 10px;
