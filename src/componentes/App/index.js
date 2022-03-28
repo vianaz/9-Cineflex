@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import Finalizacao from "../Finalizacao";
 
 
 
@@ -18,6 +19,7 @@ export default function App() {
 				<Route path="/" element={<HomeFilmes />} />
 				<Route path="/filme/:idFilme" element={<Horarios />} />
 				<Route path="/sessao/:idSessao" element={<Lugares />} />
+				<Route path="/sucesso" element={<Finalizacao />} />
 			</Routes>
 		</BrowserRouter>
 	);

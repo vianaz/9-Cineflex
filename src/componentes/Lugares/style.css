@@ -1,3 +1,42 @@
+.main-lugares {
+	margin-top: calc(70px + 45px);
+	margin-bottom: calc(110px + 30px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main-lugares > p {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	display: flex;
+	text-align: center;
+	letter-spacing: 0.04em;
+	margin: 0px auto;
+	color: #293845;
+}
+.lugares {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 10px 0px;
+	justify-items: center;
+	width: 90vw;
+	padding-top: 30px;
+}
+.lugar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	background: #c3cfd9;
+	border: 1px solid #808f9d;
+	box-sizing: border-box;
+	border-radius: 50px;
+}
 .footer-sessao {
 	display: flex;
 	align-items: center;
@@ -19,6 +58,98 @@
 	padding: 5px;
 	margin: 15px;
 }
-.footer-titulo > p{
-    margin: 10px;
+.footer-titulo > p {
+	margin: 10px;
+}
+.lugar:hover {
+	cursor: pointer;
+}
+.indisponivel {
+	background-color: #fbe192;
+}
+.selecionado {
+	background-color: #8dd7cf;
+}
+.legenda {
+	display: flex;
+	justify-content: space-around;
+	width: 100vw;
+	padding-top: 25px;
+}
+.individual {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.individual > p {
+	margin-top: 10px;
+}
+.formulario {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	width: 90vw;
+}
+.nome-comprador {
+	display: flex;
+	flex-direction: column;
+}
+.cpf-comprador {
+	display: flex;
+	flex-direction: column;
+}
+label {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	display: flex;
+	text-align: center;
+	letter-spacing: 0.04em;
+	margin: 0px auto;
+	color: #293845;
+}
+#cpf {
+	margin-top: 10px;
+	margin-bottom: 45px;
+	font-size: 17px;
+	padding-left: 10px;
+	height: 50px;
+	background: #ffffff;
+	border: 1px solid #d5d5d5;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+#nome {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 17px;
+	padding-left: 10px;
+	height: 50px;
+	background: #ffffff;
+	border: 1px solid #d5d5d5;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+.botao {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	width: 250px;
+	height: 50px;
+	margin: 0px auto;
+
+	color: #ffffff;
+	background: #e8833a;
+	border-radius: 3px;
+	border: none;
 }

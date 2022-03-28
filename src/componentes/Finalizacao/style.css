@@ -1,0 +1,48 @@
+.main-finalizacao {
+	margin-top: calc(70px + 45px);
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+}
+.main-finalizacao > p {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 27px;
+	line-height: 28px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 190px;
+
+	color: #247a6b;
+}
+.infos {
+	margin-top: 40px;
+	margin-left: 25px;
+	font-family: "Roboto";
+	font-style: normal;
+	
+	font-size: 24px;
+	line-height: 28px;
+	align-items: center;
+	letter-spacing: 0.04em;
+
+	color: #293845;
+}
+.filme {
+	margin-bottom: 30px;
+}
+.titulo-sucesso {
+    font-weight: 700;
+	margin-bottom: 10px;
+}
+.ingressos {
+	margin-bottom: 30px;
+}
+.comprador {
+    margin-bottom: 50px;
+}
