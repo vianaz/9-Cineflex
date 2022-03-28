@@ -11,6 +11,7 @@ export default function Lugares() {
 	const [lugares, setLugares] = useState([]);
 	const [dia, setDia] = useState([]);
 	const [filme, setFilme] = useState([]);
+	const [cpf, setCpf] = useState();
 	const [dadosPessoa, setDadosPessoa] = useState({
 		ids: [],
 		nome: "",
@@ -85,8 +86,7 @@ export default function Lugares() {
 								"https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many",
 								dadosPessoa,
 							)
-							.then(() => console.log("enviado"))
-							.catch(() => console.log("n enviou"));
+							.catch(() => alert("Houve algum problema, tente novamente!"));
 						navigate("/sucesso", {
 							state: [filme, dia, dadosPessoa, resposta],
 						});
@@ -110,11 +110,13 @@ export default function Lugares() {
 							maxLength='14'
 							placeholder='Digite seu CPF...'
 							id='cpf'
+							value={cpf}
 							onChange={(e) => {
 								setDadosPessoa({
 									...dadosPessoa,
 									cpf: maskCpf(e.target.value),
 								});
+								setCpf(maskCpf(e.target.value));
 							}}
 							required
 						/>
